@@ -23,7 +23,15 @@ $(document).ready(function()  {
 
 
 
+$(document).ready(function(){
+  $("form#sentence").submit(function(event){
+    var newSentence = $("input#input").val();
+    splitNewSentence = newSentence.split(' ');
+    console.log(newSplitSentence);
+    $("form#sentence").append(newSplitSentence);
 
+  });
+});
 
 
 
