@@ -10,11 +10,12 @@ $(document).ready(function()  {
     });
    
     newArray.sort();
-    
+
     newArray.forEach(function(item){
       $("ul").append("<li>"+item.toUpperCase()+"</li>");
     });
-
+    $("form#groceries").hide();
+    $("#finallist").show();
     event.preventDefault();
   });
 });
